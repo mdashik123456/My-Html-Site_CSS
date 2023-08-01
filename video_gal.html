@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- All CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Video Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .video-row {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .video-item {
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .video-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .video-item:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"><span class="text-warning">My</span>Site</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="office.html">Office</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="./image_gel.html">Image Gallery</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="./video_gal.html">Video Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>        
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br><br>
+    <h1>Video Gallery</h1>
+    <center>
+        <div class="video-gallery">
+            <div class="video-row">
+                <div class="video-item">
+                    <a href="https://www.youtube.com/watch?v=tnmR5435kFY" target="_blank">
+                        <img src="https://i9.ytimg.com/vi/tnmR5435kFY/maxresdefault.jpg?v=649469d7&sqp=COj4pKYG&rs=AOn4CLD8SqyHUxZ9TMuuHwu3bcPrqFaG4g"
+                            alt="Video 1">
+                    </a>
+                </div>
+                <div class="video-item">
+                    <a href="https://www.youtube.com/watch?v=0S9Gc0Z4eKg" target="_blank">
+                        <img src="https://i9.ytimg.com/vi_webp/0S9Gc0Z4eKg/maxresdefault.webp?v=649320b3&sqp=COj4pKYG&rs=AOn4CLD1bhs09ddVFbLoGdEeLXz6OFD-Aw"
+                            alt="Video 2">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Add more rows as needed -->
+        <div class="video-row">
+            <div class="video-item">
+                <a href="https://youtu.be/lYL5cZ0uwWg" target="_blank">
+                    <img src="https://i9.ytimg.com/vi/lYL5cZ0uwWg/maxresdefault.jpg?v=6481b856&sqp=CMD9pKYG&rs=AOn4CLBlabTVR64-KccttQrzeLIqNIeTLw"
+                        alt="Video 3">
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://youtu.be/qGDMuKGCQh8" target="_blank">
+                    <img src="https://i9.ytimg.com/vi_webp/qGDMuKGCQh8/maxresdefault.webp?v=6475eddf&sqp=CMD9pKYG&rs=AOn4CLCG4tjhNBpiyGEZIQ92cX1dEkEXdA"
+                        alt="Video 4">
+                </a>
+            </div>
+            <!-- Add more video items for this row -->
+        </div>
+        </div>
+    </center>
+</body>
+
+</html>
